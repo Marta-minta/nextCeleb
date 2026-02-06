@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextCeleb Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="flex min-h-screen items-center justify-center px-4 py-12">
+      <div class="w-full max-w-md rounded-3xl border border-slate-800 bg-slate-900/70 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur">
+        <div class="mb-8 text-center">
+          <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-500/20 text-indigo-300">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a7 7 0 0 0-4 12.74V20l4-2 4 2v-5.26A7 7 0 0 0 12 2Zm0 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" />
+            </svg>
+          </span>
+          <h1 class="mt-4 text-2xl font-semibold text-white">Welcome back</h1>
+          <p class="mt-2 text-sm text-slate-400">Log in to manage your NextCeleb account.</p>
+        </div>
+
+        <form class="space-y-5">
+          <label class="block">
+            <span class="text-sm font-medium text-slate-300">Email address</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              class="mt-2 w-full rounded-xl border border-slate-800 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-600 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
+              required
+            />
+          </label>
+
+          <label class="block">
+            <span class="text-sm font-medium text-slate-300">Password</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="••••••••"
+              class="mt-2 w-full rounded-xl border border-slate-800 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-600 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
+              required
+            />
+          </label>
+
+          <div class="flex items-center justify-between text-sm">
+            <label class="inline-flex items-center gap-2 text-slate-400">
+              <input type="checkbox" class="h-4 w-4 rounded border-slate-700 bg-slate-900 text-indigo-500 focus:ring-indigo-500/40" />
+              Remember me
+            </label>
+            <a href="#" class="font-medium text-indigo-400 hover:text-indigo-300">Forgot password?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-xl bg-indigo-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
+          >
+            Sign in
+          </button>
+        </form>
+
+        <div class="mt-6 text-center text-sm text-slate-400">
+          Don’t have an account?
+          <a href="#" class="font-semibold text-indigo-400 hover:text-indigo-300">Create one</a>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-slate-800 bg-slate-950/60 p-4 text-xs text-slate-500">
+          <p class="font-semibold text-slate-300">Tip</p>
+          <p class="mt-1">Use a strong password and enable two-factor authentication for extra security.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
